@@ -32,7 +32,7 @@ limitations under the License.
         <p class="mb2">We’re here to keep you on two wheels. Give us a call with any questions, comments or feedback regarding any of our products. We’re available 9am-6pm on weekdays, 9-am-5pm at weekends.</p>
         <hr class="xs-hide sm-hide mt3 mb3">
 
-        <form name="contact" method="post" netlify action-xhr="//casamiratowerscebu.netlify.com/" target="_top">
+        <form id="contact-form" name="contact" method="post" netlify action-xhr="//casamiratowerscebu.netlify.com/" target="_top">
 <!-- Start Input -->
 <div class="ampstart-input inline-block relative m0 p0 mb3 ">
   <input type="text" value="" name="name" id="name" class="block border-none p0 m0" placeholder="Full name">
@@ -84,4 +84,15 @@ limitations under the License.
   </main>
 {% include footer.html %}
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$("#contact-form").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
+</script>
 </html>
