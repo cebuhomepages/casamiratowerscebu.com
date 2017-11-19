@@ -152,7 +152,7 @@ limitations under the License.
         <hr class="mb4">
             <div class="col-6 self-start pb1" id="inquiry-input">
                 <span class="h6 md-h7 align-top pr2">To Enquire:</span>
-                <form id="inquiry-form" name="contact" method="post" action="thank-you-inquiry" netlify >
+                <form id="inquiry-form" name="contact" method="post" action="{{ page.url }}" netlify >
                 <!-- Start Input -->
                 <div class="ampstart-input inline-block relative m0 p0 mb3 ">
                         <input type="text" value="" name="name" id="name" class="block border-none p0 m0" placeholder="Name">
@@ -386,7 +386,7 @@ limitations under the License.
         $("#inquire-btn").click(function(e) {
             e.preventDefault();
 
-            var $form = $(this);
+            var $form = $("#inquiry-form");
             debugger;
             $.post($form.attr("action"), $form.serialize()).then(function() {
                 $('#inquiry-input').html(
