@@ -391,9 +391,12 @@ limitations under the License.
             $.post($form.attr("action"), $form.serialize()).then(function() {
                 $('#inquiry-input').html(
                 '<span class="h6 md-h7 align-top pr2">Thank you for your interest. '
-                +'Your inquiry was successfully sent to <a href="mailto:casamiratowers@gmail.com>casamiratowers@gmail.com</a>. '
+                +'Your inquiry was successfully sent to <a href="mailto:casamiratowers@gmail.com">casamiratowers@gmail.com</a>. '
                 +'We will respond shortly.</span>'
                 );
+                
+                $("<a href='tel:+639176312463' class='ampstart-btn ampstart-btn-secondary caps'>Call 09176312463</button>").insertAfter('#inquire-btn');
+                $('#inquire-btn').hide();
             });
         });
     });
