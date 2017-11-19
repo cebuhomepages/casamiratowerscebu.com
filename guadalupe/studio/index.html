@@ -137,48 +137,50 @@ limitations under the License.
       </div>
       <div class="col-12 md-col-6 flex flex-wrap content-start px2 md-pl5 md-pr7 md-pt4">
         <div class="col-6 self-start pb2">
-          <h1 class="h3 md-h2">Studio Unit - ₱1,580,000.00</h1>
-          <div class="h7 md-h6">6,166.67/month</div>
+          <h1 class="h3 md-h2">Studio Unit - ₱6,166.67/month</h1>
+          <div class="h7 md-h6">₱1,580,000.00</div>
         </div>
         <div class="col-6 self-start right-align">
-          <h2 class="h7 block pb1">Reviews</h2>
+          <h2 class="h7 block pb1">Affordability</h2>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-star"><path fill="currentColor" d="M12.6229508 19.2631579L20.4491803 24l-2.0827869-8.9052632 6.8795082-5.93684206L16.157377 8.4 12.6229508 0 9.0885246 8.4 0 9.15789474l6.8795082 5.99999996L4.7967213 24"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-star"><path fill="currentColor" d="M12.6229508 19.2631579L20.4491803 24l-2.0827869-8.9052632 6.8795082-5.93684206L16.157377 8.4 12.6229508 0 9.0885246 8.4 0 9.15789474l6.8795082 5.99999996L4.7967213 24"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-star"><path fill="currentColor" d="M12.6229508 19.2631579L20.4491803 24l-2.0827869-8.9052632 6.8795082-5.93684206L16.157377 8.4 12.6229508 0 9.0885246 8.4 0 9.15789474l6.8795082 5.99999996L4.7967213 24"></path></svg>
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-star"><path fill="currentColor" d="M12.6229508 19.2631579L20.4491803 24l-2.0827869-8.9052632 6.8795082-5.93684206L16.157377 8.4 12.6229508 0 9.0885246 8.4 0 9.15789474l6.8795082 5.99999996L4.7967213 24"></path></svg>
 <svg xmlns="http://www.w3.org/2000/svg" class="icon-star-empty" width="26" height="24" viewbox="0 0 26 24"><path fill="currentColor" d="M26 9.15789474L16.911475 8.4 13.377049 0 9.842623 8.4l-9.088525.75789474 6.879509 5.99999996L5.55082 24l7.826229-4.7368421L21.203279 24l-2.082787-8.9052632L26 9.15789474zM13.377049 16.9263158l-4.733606 2.8421053 1.262295-5.431579-4.228689-3.6 5.554099-.5052632 2.145901-5.11578943 2.145902 5.11578943 5.554098.5052632L16.911475 14.4l1.262295 5.4315789-4.796721-2.9052631z"></path></svg>
         </div>
-        <div class="col-12 self-start pb4">Built with lightweight aluminum for speed.</div>
+        <div class="col-12 self-start pb4">The most affordable pre-selling Studio Unit in V Rama. with excellent quality.</div>
         <hr class="mb4">
-        <div class="col-6 self-start pb4">
-          <span class="h6 md-h7 align-top pr2">colour:</span>
-          <amp-selector class="inline-block" name="color" layout="container" [selected]="product.selectedColor" on="select:AMP.setState({
-                              product: {
-                                selectedColor: event.targetOption
-                              }
-                            })">
-            <ul class="m0 list-reset inline-block">
-              <li class="inline-block mr1">
-                <div option="black" selected="selected" class="commerce-product-color-swatch commerce-product-color-black"></div>
-              </li>
-              <li class="inline-block mr1">
-                <div option="blue" class="commerce-product-color-swatch commerce-product-color commerce-product-color-blue"></div>
-              </li>
-            </ul>
-          </amp-selector>
-        </div>
-        <div class="col-6 self-start pb4">
-<div class="commerce-select-wrapper inline-block  ">
-  <label for="sizes" class="bold caps h6 md-h7">Area: </label>
-  <span id="sizes" class="h6 md-h7">
-      20 sqm
-  </span>
-</div>
-        </div>
-        <hr class="mb4">
-        <div class="col-12 self-start mb4 commerce-product-btn-wrapper">
-          <button class="ampstart-btn ampstart-btn-secondary caps" on="tap:AMP.setState({cart: {added: true}})">Add to cart</button>
-        </div>
+            <div class="col-6 self-start pb1" id="inquiry-input">
+                <span class="h6 md-h7 align-top pr2">To Enquire:</span>
+                <form id="inquiry-form" name="contact" method="post" action="thank-you-inquiry" netlify >
+                <!-- Start Input -->
+                <div class="ampstart-input inline-block relative m0 p0 mb3 ">
+                        <input type="text" value="" name="name" id="name" class="block border-none p0 m0" placeholder="Name">
+                        <label for="name" class="absolute top-0 right-0 bottom-0 left-0" aria-hidden="true">Name</label>
+                </div>
+                <span class="ampstart-input inline-block relative m0 p0 mb3 ">
+                    <input type="text" value="" name="email" id="email" class="border-none p0 m0" placeholder="E-Mail address">
+                    <label for="email" class="absolute top-0 right-0 bottom-0 left-0" aria-hidden="true">E-Mail address</label>
+                </span>
+                <span class="ampstart-input inline-block relative m0 p0 mb3 ">
+                    <input type="text" value="" name="phone" id="phone" class="border-none p0 m0" placeholder="Phone">
+                    <label for="phone" class="absolute top-0 right-0 bottom-0 left-0" aria-hidden="true">Phone</label>
+                </span>
+                <!-- End Input-->
+                </form>
+            </div>
+            <div class="col-6 self-start pb4">
+            <div class="commerce-select-wrapper inline-block  ">
+            <label for="sizes" class="bold caps h6 md-h7">Area: </label>
+            <span id="sizes" class="h6 md-h7">
+                20 sqm
+            </span>
+            </div>
+            </div>
+            <hr class="mb1">
+            <div class="col-12 self-start mb2 commerce-product-btn-wrapper">
+            <button class="ampstart-btn ampstart-btn-secondary caps" id="inquire-btn">Submit Enquiry</button>
+            </div>
         <hr class="md-hide lg-hide">
       </div>
       <div class="col-12 flex flex-wrap pb3">
@@ -186,9 +188,8 @@ limitations under the License.
         <div class="col-12 md-col-6 px2 md-pl7 commerce-product-desc">
           <section class="pt3 md-pt6 md-px4">
             <h2 class="h5 md-h4">Overview</h2>
-            <p class="mt2 mb3">Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus
-              ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin
-              fermentum odio, odio arcu in eu wisi. </p>
+            <p class="mt2 mb3">An ideal condominium unit that gives opportunity to starting families and single professionals to acquire a practical livable abode that is affordable. 
+                The project’s location allows short travel from home to work and any other necessities, such as school, shopping centers and hospitals. </p>
               <hr>
               <div class="pt3 md-pt4 md-pb4">
                 <h2 class="h5 md-h4 mb2">Reviews</h2>
@@ -379,4 +380,23 @@ limitations under the License.
   </main>
 {% include footer.html %}
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#inquire-btn").click(function(e) {
+            e.preventDefault();
+
+            var $form = $(this);
+            debugger;
+            $.post($form.attr("action"), $form.serialize()).then(function() {
+                $('#inquiry-input').html(
+                '<span class="h6 md-h7 align-top pr2">Thank you for your interest. '
+                +'Your inquiry was successfully sent to <a href="mailto:casamiratowers@gmail.com>casamiratowers@gmail.com</a>. '
+                +'We will respond shortly.</span>'
+                );
+            });
+        });
+    });
+
+</script>
 </html>
